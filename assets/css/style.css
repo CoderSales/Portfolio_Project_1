@@ -587,7 +587,8 @@ p.index-timeline-picture-text {
 }
 
 div.horizontal-timeline-image-description {
-    width: 50%;
+    width: 100%;
+    clear: both;
 }
 
 /* Item 3 on https://csshint.com/horizontal-timeline-css/ 
