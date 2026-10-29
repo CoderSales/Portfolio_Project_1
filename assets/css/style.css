@@ -598,7 +598,7 @@ div.horizontal-timeline-image-container>span>img {
 p.index-timeline-picture-text {
     width: 50vw;
     margin-left: 25vw;
-    font-size: 48px !important;
+    font-size: 40px !important;
     line-height: 1.4;
 }
 
@@ -608,8 +608,9 @@ div.horizontal-timeline-image-description {
 }
 
 div.horizontal-timeline-image-description p {
-    font-size: 48px !important;
+    font-size: 40px !important;
     line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 /* Item 3 on https://csshint.com/horizontal-timeline-css/ 
