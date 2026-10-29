@@ -750,7 +750,10 @@ div.horizontal-timeline-image-container>span>img {
 }
 
 .nav-menu > li:not(:first-child):not(:last-child) > .button {
-  min-height: 2.25rem;
+  height: 48px;
+  min-height: 48px;
+  line-height: 1.1;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
