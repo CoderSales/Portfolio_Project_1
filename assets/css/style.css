@@ -708,8 +708,7 @@ div.horizontal-timeline-image-description p {
                     width:100%;
                 }
                 #outer_wrapper #inner_wrapper {
-                    width: 1000px; 
-                    /* If more elements, increase width accordingly */
+                    width: 100%;
                 }
                 #outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
                     width: 250px;
