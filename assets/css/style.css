@@ -598,6 +598,8 @@ div.horizontal-timeline-image-container>span>img {
 p.index-timeline-picture-text {
     width: 50vw;
     margin-left: 25vw;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 div.horizontal-timeline-image-description {
