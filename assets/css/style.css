@@ -716,14 +716,15 @@ div.horizontal-timeline-image-container>span>img {
 
 .nav-menu > li:first-child,
 .nav-menu > li:last-child {
-  display: flex;
-  position: fixed;
-  top: 0;
-  z-index: 30;
-  width: 44px;
-  height: 38px;
+  display: flex !important;
+  position: fixed !important;
+  top: 2px !important;
+  z-index: 100 !important;
+  width: 44px !important;
+  height: 34px !important;
   align-items: center;
   justify-content: center;
+  visibility: visible !important;
 }
 
 .nav-menu > li:first-child { left: 0; }
@@ -731,10 +732,12 @@ div.horizontal-timeline-image-container>span>img {
 
 .nav-menu > li:first-child .nav-arrow,
 .nav-menu > li:last-child .nav-arrow {
-  width: 44px;
-  height: 38px;
+  display: inline-flex !important;
+  width: 44px !important;
+  height: 34px !important;
   border-radius: 0;
   font-size: 1.35rem;
+  visibility: visible !important;
 }
 
 .nav-menu > li:not(:first-child):not(:last-child),
