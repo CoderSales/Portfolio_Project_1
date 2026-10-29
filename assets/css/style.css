@@ -573,7 +573,7 @@ div.horizontal-timeline-image-container>span {
 div.horizontal-timeline-image-container>span>img {
   background-color: white;
   display: block;
-  margin: 1rem auto;
+  margin: 1rem 0;
   width: min(40vw, 500px) !important;
   max-width: 100% !important;
   object-fit: contain;
