@@ -10,9 +10,9 @@ This project was a good learning experience about css and html.  Challenges incl
 
 From 29 October 2026 onwards, ChatGPT was used as an AI-assisted development tool for website updates, debugging, responsive CSS improvements, navigation behaviour, and documentation updates. The project’s content, structure, and final decisions remain the author’s responsibility.
 
-### Additional Learning Reference
+### Additional CSS Learning Reference
 
-- [JavaScript tutorial playlist](https://www.youtube.com/watch?v=0W6qz0-aDaM&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit) — used as a learning reference.
+- [CSS Introduction and Tutorial for Beginners](https://www.youtube.com/watch?v=0W6qz0-aDaM&list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit) — used as a CSS learning reference.
 
 ![Picture of Final Project](assets/images/final_project_validated.jpg)
 <center><a href="https://codersales.github.io/Portfolio_Project_1/" target="_blank">Image of Final Project</a><center>
