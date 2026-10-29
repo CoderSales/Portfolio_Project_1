@@ -31,11 +31,13 @@
                 <div>
                     <nav>
                         <ul class="nav-menu">
+                            <li class="bulletless"><span class="nav-arrow" aria-hidden="true">&#8592;</span></li>
                             <li class="bulletless"><a href="index.html" class="button" target="_self">Home</a></li>
                             <li class="bulletless"><a href="pre_and_first_generation.html" class="button" target="_self">Pre and First Generation</a></li>
                             <li class="bulletless"><a href="second_generation.html" class="button" target="_self">Second Generation</a></li>
                             <li class="bulletless"><a href="third_and_fourth_generation.html" class="button" target="_self">Third and Fourth Generation</a></li>
                             <li class="bulletless"><a href="matrix_visual.html" class="button" target="_self">Matrix Visual</a></li>
+                            <li class="bulletless"><a href="pre_and_first_generation.html" class="nav-arrow" aria-label="Next page">&#8594;</a></li>
                         </ul>
                     </nav>
                     <section id="section-three">
@@ -64,6 +66,10 @@
                                         by Kundan Kumar Mourya
                                             https://codepen.io/kundankumarmourya -->
                             <div class="time-line-box">
+                                <div class="timeline-controls">
+                                    <button class="timeline-control" id="timeline-prev" type="button">&#8592; Previous</button>
+                                    <button class="timeline-control" id="timeline-next" type="button">Next &#8594;</button>
+                                </div>
                                 <div class="swiper-container text-center"> 
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -123,5 +129,15 @@
         <br>
         2021
     </footer>
+    <script>
+        const timeline = document.querySelector('.swiper-container');
+        const slideWidth = () => timeline.clientWidth;
+        document.getElementById('timeline-prev').addEventListener('click', () => {
+            timeline.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
+        });
+        document.getElementById('timeline-next').addEventListener('click', () => {
+            timeline.scrollBy({ left: slideWidth(), behavior: 'smooth' });
+        });
+    </script>
     </body>
 </html>

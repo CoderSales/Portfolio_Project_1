@@ -420,7 +420,7 @@ nav {
     /* This refers to .nav-menu dixplay grid and grid template columns rules*/
     .nav-menu {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: auto repeat(5, 1fr) auto;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -596,6 +596,31 @@ div.horizontal-timeline-image-container>span>img {
 .swiper-slide:nth-child(4) div.horizontal-timeline-image-container>span>img,
 .swiper-slide:nth-child(5) div.horizontal-timeline-image-container>span>img {
   width: min(60vw, 900px) !important;
+}
+
+.timeline-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.timeline-control,
+.nav-arrow {
+  color: #3af568;
+  background: #2b2527;
+  border: 2px solid #3af568;
+  font: inherit;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.timeline-control:hover,
+.nav-arrow:hover {
+  color: #2b2527;
+  background: #3af568;
 }
 
 p.index-timeline-picture-text {
