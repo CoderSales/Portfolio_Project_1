@@ -544,16 +544,16 @@ body {
   .swiper-container {
     margin: auto;
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
   }
   .swiper-wrapper{
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: max-content;
     justify-content: flex-start;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
   }
 
    .swiper-slide {
