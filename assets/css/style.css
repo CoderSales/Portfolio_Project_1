@@ -560,6 +560,8 @@ body {
 div.horizontal-timeline-image-container>span>img {
   background-color: white;
   margin: 1rem 0 1rem 0;
+  max-width: 100%;
+  height: auto;
 
 }
 
