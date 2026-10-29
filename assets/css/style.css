@@ -712,13 +712,22 @@ div.horizontal-timeline-image-container>span>img {
 
 .nav-menu > li:first-child,
 .nav-menu > li:last-child {
-  position: fixed;
-  top: 72px;
-  z-index: 10;
+  display: none;
 }
 
-.nav-menu > li:first-child { left: 1rem; }
-.nav-menu > li:last-child { right: 1rem; }
+.nav-menu > li:not(:first-child):not(:last-child),
+.nav-menu > li:not(:first-child):not(:last-child) > .button {
+  min-width: 0;
+  width: 100%;
+}
+
+.nav-menu > li:not(:first-child):not(:last-child) > .button {
+  min-height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .nav-arrow {
   display: inline-flex;
