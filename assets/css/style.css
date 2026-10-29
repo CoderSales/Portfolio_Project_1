@@ -581,6 +581,13 @@ div.horizontal-timeline-image-container>span>img {
 
 }
 
+/* Give the later-generation images a little more visual weight. */
+.swiper-slide:nth-child(3) div.horizontal-timeline-image-container>span>img,
+.swiper-slide:nth-child(4) div.horizontal-timeline-image-container>span>img,
+.swiper-slide:nth-child(5) div.horizontal-timeline-image-container>span>img {
+  width: min(45vw, 600px) !important;
+}
+
 p.index-timeline-picture-text {
     width: 50vw;
     margin-left: 25vw;
