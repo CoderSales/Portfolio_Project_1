@@ -43,15 +43,15 @@ How the project achieves this
             <img src="assets/images/second_generation.png" alt="Tech Event 2" width="200" style="float: right;"></a></td>
         <td><a href="assets/images/third_and_fourth_generation.png" target="_blank">
             <img src="assets/images/third_and_fourth_generation.png" alt="Tech Event 3" width="200"></a></td>
-        <td><a href="assets/images/user_survey_form.png" target="_blank">
-            <img src="assets/images/user_survey_form.png" alt="User Survey Form" width="200"></a></td>
+        <td><a href="assets/images/matrix_image.jpg" target="_blank">
+            <img src="assets/images/matrix_image.jpg" alt="Matrix Visual" width="200"></a></td>
     </tr>
     <tr>
         <td><center>Computer History Timeline Image Created with Balsamiq</center></td>
         <td><center>Tech Event 1</center></td>
         <td><center>Tech Event 2</center></td>
         <td><center>Tech Event 3</center></td>
-        <td><center>User Survey Form Image</center></td>
+        <td><center>Matrix Visual</center></td>
     </tr>
 </table>
 
@@ -432,7 +432,7 @@ Live Link:
         - second_generation.png
         - third_and_fourth_generation.png
         - time_line_sketch.png
-        - user_survey_form.png
+        - matrix_image.jpg
         - wireframe_for_content.png
         - wireframe_for_videos.png
 
