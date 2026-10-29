@@ -8,7 +8,7 @@ This project was a good learning experience about css and html.  Challenges incl
 
 ## Development Acknowledgement
 
-ChatGPT was used as an AI-assisted development tool for debugging, responsive CSS improvements, navigation behaviour, and documentation updates. The project’s content, structure, and final decisions remain the author’s responsibility.
+From 29 October 2026 onwards, ChatGPT was used as an AI-assisted development tool for website updates, debugging, responsive CSS improvements, navigation behaviour, and documentation updates. The project’s content, structure, and final decisions remain the author’s responsibility.
 
 ![Picture of Final Project](assets/images/final_project_validated.jpg)
 <center><a href="https://codersales.github.io/Portfolio_Project_1/" target="_blank">Image of Final Project</a><center>

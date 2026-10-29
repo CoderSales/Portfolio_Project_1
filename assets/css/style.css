@@ -718,10 +718,10 @@ div.horizontal-timeline-image-container>span>img {
 .nav-menu > li:last-child {
   display: flex !important;
   position: fixed !important;
-  top: 2px !important;
+  top: 4px !important;
   z-index: 100 !important;
-  width: 44px !important;
-  height: 34px !important;
+  width: 48px !important;
+  height: 48px !important;
   align-items: center;
   justify-content: center;
   visibility: visible !important;
@@ -733,10 +733,13 @@ div.horizontal-timeline-image-container>span>img {
 .nav-menu > li:first-child .nav-arrow,
 .nav-menu > li:last-child .nav-arrow {
   display: inline-flex !important;
-  width: 44px !important;
-  height: 34px !important;
-  border-radius: 0;
-  font-size: 1.35rem;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  border: 3px solid #3af568;
+  box-shadow: 0 0 0 3px #174d2a, 0 0 14px #3af568;
+  font-size: 1.5rem;
+  background: #2b2527;
   visibility: visible !important;
 }
 
