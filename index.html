@@ -130,8 +130,8 @@
         2021
     </footer>
     <script>
-        const timeline = document.querySelector('.swiper-container');
-        const slideWidth = () => timeline.clientWidth;
+        const timeline = document.querySelector('.swiper-wrapper');
+        const slideWidth = () => timeline.parentElement.clientWidth;
         document.getElementById('timeline-prev').addEventListener('click', () => {
             timeline.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
         });
