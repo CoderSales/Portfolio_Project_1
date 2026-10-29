@@ -581,11 +581,14 @@ div.horizontal-timeline-image-container>span>img {
 
 }
 
-/* Give the later-generation images a little more visual weight. */
-.swiper-slide:nth-child(3) div.horizontal-timeline-image-container>span>img,
+/* Give the later-generation images more visual weight. */
+.swiper-slide:nth-child(3) div.horizontal-timeline-image-container>span>img {
+  width: min(65vw, 1000px) !important;
+}
+
 .swiper-slide:nth-child(4) div.horizontal-timeline-image-container>span>img,
 .swiper-slide:nth-child(5) div.horizontal-timeline-image-container>span>img {
-  width: min(55vw, 800px) !important;
+  width: min(60vw, 900px) !important;
 }
 
 p.index-timeline-picture-text {
