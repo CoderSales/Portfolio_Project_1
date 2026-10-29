@@ -458,6 +458,36 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #3af568;
     background: #2b2527;
+    overflow-x: hidden;
+}
+
+html {
+    scrollbar-color: #3af568 #2b2527;
+    scrollbar-width: auto;
+}
+
+body::-webkit-scrollbar,
+.swiper-container::-webkit-scrollbar {
+    height: 16px;
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track,
+.swiper-container::-webkit-scrollbar-track {
+    background: #2b2527;
+    border: 1px solid #174d2a;
+}
+
+body::-webkit-scrollbar-thumb,
+.swiper-container::-webkit-scrollbar-thumb {
+    background: #3af568;
+    border: 3px solid #2b2527;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.swiper-container::-webkit-scrollbar-thumb:hover {
+    background: #8affaa;
 }
 /* Credit Comment End Neon Button */
 
