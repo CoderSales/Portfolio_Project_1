@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet links: -->
-    <link rel="stylesheet" href="assets/css/style.css?v=css-scrollbar-fix-96a1f33">
+    <link rel="stylesheet" href="assets/css/style.css?v=timeline-bar-20261029">
     <!-- Link for Google font Roboto: -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -105,6 +105,9 @@
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
+                                <div class="timeline-scrollbar" role="scrollbar" aria-label="Timeline position" tabindex="0">
+                                    <span class="timeline-scrollbar-thumb"></span>
+                                </div>
                             </div>
                             <!--Item 3 on https://csshint.com/horizontal-timeline-css/ 
                             https://codepen.io/kundankumarmourya/pen/oKBMLe
@@ -132,6 +135,22 @@
     <script>
         const timeline = document.querySelector('.swiper-container');
         const slideWidth = () => timeline.clientWidth;
+        const scrollbar = document.querySelector('.timeline-scrollbar');
+        const scrollbarThumb = document.querySelector('.timeline-scrollbar-thumb');
+        const updateScrollbar = () => {
+            const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+            const thumbWidth = Math.max(12, (timeline.clientWidth / timeline.scrollWidth) * 100);
+            const position = maxScroll ? (timeline.scrollLeft / maxScroll) * (100 - thumbWidth) : 0;
+            scrollbarThumb.style.width = `${thumbWidth}%`;
+            scrollbarThumb.style.left = `${position}%`;
+        };
+        timeline.addEventListener('scroll', updateScrollbar);
+        window.addEventListener('resize', updateScrollbar);
+        scrollbar.addEventListener('click', (event) => {
+            const ratio = event.offsetX / scrollbar.clientWidth;
+            timeline.scrollTo({ left: ratio * (timeline.scrollWidth - timeline.clientWidth), behavior: 'smooth' });
+        });
+        updateScrollbar();
         document.getElementById('timeline-prev').addEventListener('click', () => {
             timeline.scrollBy({ left: -slideWidth(), behavior: 'smooth' });
         });
