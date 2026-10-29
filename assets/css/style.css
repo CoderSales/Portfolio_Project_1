@@ -590,10 +590,9 @@ body::-webkit-scrollbar-thumb:hover,
   }
 
   .timeline-scrollbar {
-    position: fixed !important;
-    left: 1rem;
-    right: 1rem;
-    bottom: 0.75rem !important;
+    position: static !important;
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem;
     height: 16px;
     z-index: 1000;
     background: #174d2a;

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet links: -->
-    <link rel="stylesheet" href="assets/css/style.css?v=footer-bar-fix-20261029">
+    <link rel="stylesheet" href="assets/css/style.css?v=bottom-of-page-20261029">
     <!-- Link for Google font Roboto: -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -105,9 +105,6 @@
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="timeline-scrollbar" role="scrollbar" aria-label="Timeline position" tabindex="0">
-                                    <span class="timeline-scrollbar-thumb"></span>
-                                </div>
                             </div>
                             <!--Item 3 on https://csshint.com/horizontal-timeline-css/ 
                             https://codepen.io/kundankumarmourya/pen/oKBMLe
@@ -132,6 +129,9 @@
         <br>
         2021
     </footer>
+    <div class="timeline-scrollbar" role="scrollbar" aria-label="Timeline position" tabindex="0">
+        <span class="timeline-scrollbar-thumb"></span>
+    </div>
     <script>
         const timeline = document.querySelector('.swiper-container');
         const slideWidth = () => timeline.clientWidth;
