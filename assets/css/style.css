@@ -607,6 +607,11 @@ div.horizontal-timeline-image-description {
     clear: both;
 }
 
+div.horizontal-timeline-image-description p {
+    font-size: 32px !important;
+    line-height: 1.5;
+}
+
 /* Item 3 on https://csshint.com/horizontal-timeline-css/ 
                     https://codepen.io/kundankumarmourya/pen/oKBMLe
                         by Kundan Kumar Mourya
