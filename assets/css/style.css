@@ -589,13 +589,15 @@ body::-webkit-scrollbar-thumb:hover,
     display: none;
   }
 
-  .timeline-scrollbar {
-  position: fixed !important;
-  left: 1rem;
-  right: 1rem;
-  bottom: 0.75rem;
-  width: auto;
-  margin: 0;
+  body > .timeline-scrollbar {
+    position: fixed !important;
+    display: block !important;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.75rem !important;
+    top: auto !important;
+    width: auto !important;
+    margin: 0 !important;
     height: 16px;
     z-index: 1000;
     background: #174d2a;
