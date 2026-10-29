@@ -720,8 +720,8 @@ div.horizontal-timeline-image-container>span>img {
   position: fixed !important;
   top: 4px !important;
   z-index: 100 !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 44px !important;
+  height: 44px !important;
   align-items: center;
   justify-content: center;
   visibility: visible !important;
@@ -733,12 +733,12 @@ div.horizontal-timeline-image-container>span>img {
 .nav-menu > li:first-child .nav-arrow,
 .nav-menu > li:last-child .nav-arrow {
   display: inline-flex !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 44px !important;
+  height: 44px !important;
   border-radius: 50% !important;
   border: 2px solid #3af568;
-  box-shadow: none;
-  font-size: 1.25rem;
+  box-shadow: 0 0 0 2px #174d2a, 0 0 8px rgba(58, 245, 104, 0.7);
+  font-size: 1.35rem;
   background: #2b2527;
   visibility: visible !important;
 }
