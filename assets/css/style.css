@@ -424,6 +424,7 @@ nav {
         width: 100%;
         margin: 0;
         padding: 0;
+        position: relative;
     /* Nested Credit Comment End */
     }
 }
@@ -599,10 +600,13 @@ div.horizontal-timeline-image-container>span>img {
 }
 
 .timeline-controls {
+  position: fixed;
+  inset: 50% 1rem auto 1rem;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem auto;
+  justify-content: space-between;
+  margin: 0;
+  z-index: 20;
+  pointer-events: none;
 }
 
 .timeline-control,
@@ -615,6 +619,39 @@ div.horizontal-timeline-image-container>span>img {
   padding: 0.25rem 0.75rem;
   text-decoration: none;
   cursor: pointer;
+}
+
+.timeline-control {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  border-radius: 50%;
+  pointer-events: auto;
+  font-size: 0;
+}
+
+#timeline-prev::after { content: '\2190'; font-size: 2rem; }
+#timeline-next::after { content: '\2192'; font-size: 2rem; }
+
+.nav-menu > li:first-child,
+.nav-menu > li:last-child {
+  position: absolute;
+  top: 4.5rem;
+  z-index: 10;
+}
+
+.nav-menu > li:first-child { left: 1rem; }
+.nav-menu > li:last-child { right: 1rem; }
+
+.nav-arrow {
+  display: inline-flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.8rem;
 }
 
 .timeline-control:hover,
