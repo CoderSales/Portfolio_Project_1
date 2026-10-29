@@ -29,7 +29,6 @@ How the project achieves this
 
 - Wireframe in Balsamiq
 - Navigation bar
-- User survey form
 - Horizontal timeline
 - Vertical timelines
 
@@ -88,11 +87,6 @@ How the project achieves this
         - third_and_fourth_generation.html has two eras.
             - Third Generation: Gives information on integrated circuits (ICs)
             - Fourth Generation: Gives information on the microprocessor and explains that while this era is listed as being from 1971 to 1980, current desktop computers still use microprocessors, although the technology has significantly advanced.  Also including is a piece on EUV Extreme Ultraviolet lithography, used in semi-conductor fabrication.  Finally, there is a link to a recent news article semiconductor shortages and how this is affecting not only desktop computers but a wide range of other technologies.
-    - Survey Form to gather user feedback about the website.
-
-
-- The website features a form element. This is a survey of how the user found the content and overall impression of the website.
-![Form](assets/images/form_image.png)
 - The love-running guided website building project was used as a template.
 
 - Button
