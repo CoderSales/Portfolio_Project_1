@@ -582,6 +582,10 @@ div.horizontal-timeline-image-container>span>img {
 }
 
 /* Give the later-generation images more visual weight. */
+.swiper-slide:nth-child(1) div.horizontal-timeline-image-container>span>img {
+  width: min(55vw, 800px) !important;
+}
+
 .swiper-slide:nth-child(3) div.horizontal-timeline-image-container>span>img {
   width: min(65vw, 1000px) !important;
 }
