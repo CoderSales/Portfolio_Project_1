@@ -557,9 +557,15 @@ body {
   }
 
 /* horizontal timeline image and description styling: */
+div.horizontal-timeline-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
 div.horizontal-timeline-image-container>span>img {
   background-color: white;
-  margin: 1rem 0 1rem 0;
+  display: block;
+  margin: 1rem auto;
   max-width: 100%;
   height: auto;
 
