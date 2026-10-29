@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet links: -->
-    <link rel="stylesheet" href="assets/css/style.css?v=bottom-of-page-20261029">
+    <link rel="stylesheet" href="assets/css/style.css?v=scroll-help-20261029">
     <!-- Link for Google font Roboto: -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
@@ -50,6 +50,12 @@
 <!-- Note: horizontal scroll slider consists of 2 divs with id "outer_wrapper" and "inner_wrapper" -->
 <!-- Note: horizontal timeline is wrapped in horizontal scroll to give scrolling horizontal timeline -->
 <h2 class="hozizontal-timeline-heading">Timeline of Four Generations of Development towards today's Desktop Computers</h2>
+<aside class="scroll-help" role="status">
+    <button class="scroll-help-close" type="button" aria-label="Close scrolling help">&times;</button>
+    <strong>Timeline scrolling</strong>
+    <span>Mouse: hold Shift while using the wheel.</span>
+    <span>Trackpad: use a two-finger side-to-side swipe.</span>
+</aside>
 
                 <!-- horizontal scroll start 
                 Credit Comment Start
@@ -135,6 +141,19 @@
     <script>
         const timeline = document.querySelector('.swiper-container');
         const slideWidth = () => timeline.clientWidth;
+        timeline.addEventListener('wheel', (event) => {
+            if (event.shiftKey && Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+                event.preventDefault();
+                timeline.scrollBy({ left: event.deltaY, behavior: 'auto' });
+            }
+        }, { passive: false });
+        document.querySelector('.scroll-help-close').addEventListener('click', () => {
+            document.querySelector('.scroll-help').remove();
+        });
+        window.setTimeout(() => {
+            const help = document.querySelector('.scroll-help');
+            if (help) help.remove();
+        }, 10000);
         const scrollbar = document.querySelector('.timeline-scrollbar');
         const scrollbarThumb = document.querySelector('.timeline-scrollbar-thumb');
         const updateScrollbar = () => {

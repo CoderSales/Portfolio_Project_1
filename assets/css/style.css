@@ -1059,3 +1059,30 @@ main {
         font-size: 1.5rem;
     }
 
+.scroll-help {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 3.5rem;
+    z-index: 40;
+    display: grid;
+    gap: 0.25rem;
+    max-width: 300px;
+    padding: 0.8rem 2.2rem 0.8rem 1rem;
+    color: #3af568;
+    background: #2b2527;
+    border: 2px solid #3af568;
+    box-shadow: 0 0 12px #174d2a;
+    font-size: 0.9rem;
+}
+
+.scroll-help-close {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.45rem;
+    color: #3af568;
+    background: transparent;
+    border: 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
