@@ -614,6 +614,7 @@ body::-webkit-scrollbar-thumb:hover,
     flex-direction: row;
     width: max-content;
     justify-content: flex-start;
+    background-color: transparent;
   }
 
    .swiper-slide {
