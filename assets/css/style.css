@@ -543,15 +543,17 @@ body {
   
   .swiper-container {
     margin: auto;
-    /* overflow-y: auto; */
+    width: 100%;
+    overflow: hidden;
   }
   .swiper-wrapper{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
-    justify-content: center;
+    justify-content: flex-start;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
   }
 
    .swiper-slide {
@@ -561,6 +563,7 @@ body {
     height: 100%;
     position: relative;
     flex: 0 0 100vw;
+    scroll-snap-align: start;
   }
 
 /* horizontal timeline image and description styling: */
